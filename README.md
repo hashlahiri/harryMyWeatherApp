@@ -1,2 +1,5 @@
-# harryMyWeatherApp
- Live Weather App using SpringBoot and Bootstrap
+My Weather App
+OpenWeather API
+
+FrontEnd: Bootstrap and jquery
+Backend: SpringBoot
