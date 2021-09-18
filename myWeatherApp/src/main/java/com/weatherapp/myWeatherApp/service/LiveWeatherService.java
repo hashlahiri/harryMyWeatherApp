@@ -1,4 +1,3 @@
-//author @Chanakya Lahiri
 package com.weatherapp.myWeatherApp.service;
 
 import java.math.BigDecimal;
@@ -19,7 +18,7 @@ import com.weatherapp.myWeatherApp.model.CurrentWeather;
 @Service
 public class LiveWeatherService {
 
-	//private static String W_URL="http://api.openweathermap.org/data/2.5/weather?q=London&appid=USED OPENWEATHER API";
+	//private static String W_URL="http://api.openweathermap.org/data/2.5/weather?q=London&appid=ca3cc4741995c4a5bd2676871240df44";
 	
     private final RestTemplate restTemplate;
     private final ObjectMapper objectMapper;
@@ -31,7 +30,7 @@ public class LiveWeatherService {
 
     public CurrentWeather getCurrentWeather(String city) {
     	
-    	String W_URL = "http://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=USED OPENWEATHER API";
+    	String W_URL = "http://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=ca3cc4741995c4a5bd2676871240df44";
     	
         ResponseEntity<String> response = restTemplate.getForEntity(W_URL, String.class);
         System.out.println(response);

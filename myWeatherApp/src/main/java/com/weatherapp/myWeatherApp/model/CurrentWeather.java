@@ -1,4 +1,3 @@
-//author @Chanakya Lahiri
 package com.weatherapp.myWeatherApp.model;
 
 import java.io.Serializable;
