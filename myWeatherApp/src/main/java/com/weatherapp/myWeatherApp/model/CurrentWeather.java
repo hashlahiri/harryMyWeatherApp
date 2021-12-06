@@ -3,6 +3,9 @@ package com.weatherapp.myWeatherApp.model;
 import java.io.Serializable;
 import java.math.BigDecimal;
 
+import lombok.Data;
+
+@Data
 public class CurrentWeather implements Serializable{
 
 	private String description;
@@ -12,6 +15,7 @@ public class CurrentWeather implements Serializable{
 	private BigDecimal windSpeed;
 	private String country;
 	private String cityname;
+	
 	
 	public CurrentWeather(String description, BigDecimal temperature, BigDecimal feelsLike, BigDecimal humidity,
 			BigDecimal windSpeed, String country, String cityname) {
@@ -23,7 +27,7 @@ public class CurrentWeather implements Serializable{
 		this.country = country;
 		this.cityname = cityname;
 	}
-
+	/*
 	public String getDescription() {
 		return description;
 	}
@@ -85,6 +89,6 @@ public class CurrentWeather implements Serializable{
 		return "CurrentWeather [description=" + description + ", temperature=" + temperature + ", feelsLike="
 				+ feelsLike + ", humidity=" + humidity + ", windSpeed=" + windSpeed + ", country=" + country
 				+ ", cityname=" + cityname + "]";
-	}
+	}*/
 	
 }
